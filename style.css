@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+* {
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+body.color1 {
+    background-color: #1a1a1a;
+}
+
+body.color2 {
+    background-color: #0f151b;
+}
+
+body.color3 {
+    background-color: #111d0f;
+}
+
+body.color4 {
+    background-color: #1f101c;
+}
+
+body.color5 {
+    background-color: #242113;
+}
+
+body.color6 {
+    background-color: #142524;
+}
+
+/**/
+body.color7 {
+    background-color: #1a0000;
+}
+
+body.color8 {
+    background-color: #0f1b16;
+}
+
+body.color9 {
+    background-color: #1d0f1c;
+}
+
+body.colora {
+    background-color: #1f1910;
+}
+
+body.colorb {
+    background-color: #132414;
+}
+
+body.colorc {
+    background-color: #1c1425;
+}
+
+@keyframes changeColor {}
+
+.container {
+    margin-top: 1%;
+    padding: 0 5%;
+}
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 7px;
+}
+
+.header .subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .subscribe a {
+    font-family: 'poppins', sans-serif;
+    font-weight: 100;
+}
+
+.header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+span.line {
+    color: #fff;
+    font-size: larger;
+    margin-right: 13px;
+}
+
+.header .subscribe button {
+    font-family: 'poppins', sans-serif;
+    background: rgba(116, 255, 160, 0.733);
+    height: 28px;
+    width: 105px;
+    border-radius: 7px;
+    border: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 300;
+    transition: 0.5s ease-out;
+}
+
+.subscribe button:hover {
+    background-color: rgb(116, 255, 159);
+    box-shadow: 0 0 20px rgb(116, 255, 159);
+}
+
+.header .subscribe a {
+    margin-right: 13px;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.body h1 {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-weight: 900;
+    font-size: xxx-large;
+}
+
+#animated-title h1 {
+    transition: color 0.3s ease-in-out;
+}
+
+
+#animated-title:hover h1 {
+    cursor: pointer;
+}
+
+.scroll-animation {
+    animation: titleScroll 1s ease-in-out;
+}
+
+.body h1 {
+    transition: 0.5s ease-in-out;
+    content: "Mergulhe Em Tecnologia";
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+h1::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.87);
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+    height: 5px;
+    margin-top: 243px;
+    margin-bottom: 5%;
+    width: 329px;
+    margin-left: 5%;
+    color: #0f151b;
+}
+
+h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    color: #0f151b;
+}
+
+
+
+@keyframes titleScroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {}
+}
+
+.body p {
+    margin-top: 5%;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    width: 70%;
+    font-weight: 100;
+}
+
+.submit button {
+    font-family: 'poppins', sans-serif;
+    background: rgba(116, 255, 160, 0.733);
+    height: 28px;
+    width: 195px;
+    border-radius: 7px;
+    border: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 500;
+    transition: 0.5s ease-out;
+    margin-top: 17px;
+    text-decoration: none;
+    color: #000;
+}
+.submit a{
+    text-decoration: none;
+}
+.submit button:hover {
+    background-color: rgb(116, 255, 159);
+    box-shadow: 0 0 20px rgb(116, 255, 159);
+    cursor: pointer;
+}
+
+nav {
+    background: #000;
+    height: 100px;
+    margin-top: 450px;
+}
+
+i {
+    font-size: 650px;
+    position: absolute;
+    z-index: -1;
+    margin-left: -20%;
+    margin-top: -50%;
+    color: rgba(255, 255, 255, 0.137);
+}
+
+.credit {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.credit {
+    font-family: 'roboto', sans-serif;
+    font-size: small;
+}
+
+.credit svg {
+    margin-top: 3px;
+}
+
+.link1 a {
+    margin-top: 3px;
+    text-decoration: none;
+    color: #ffffff69;
+}
