@@ -66,9 +66,22 @@ body.colorc {
 
 .container {
     margin-top: 1%;
-    padding: 0 5%;
 }
-
+.container{
+    padding: 1% 5% 5% 5%;
+    animation-name: hover;
+    animation-duration: 1.5s;
+}
+@keyframes hover{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
 .container .header {
     display: flex;
     justify-content: space-between;
@@ -169,8 +182,7 @@ h1::before {
     transform-origin: right;
     transform: scaleX(0);
     height: 5px;
-    margin-top: 243px;
-    margin-bottom: 5%;
+    margin-top: 263px;
     width: 329px;
     margin-left: 5%;
     color: #0f151b;
@@ -186,7 +198,6 @@ h1:hover::before {
 
 @keyframes titleScroll {
     0% {
-        transform: translateY(0);
         opacity: 1;
     }
 
@@ -194,7 +205,7 @@ h1:hover::before {
 }
 
 .body p {
-    margin-top: 5%;
+    margin-top: 7%;
     font-family: 'poppins', sans-serif;
     color: #fff;
     width: 70%;
@@ -231,14 +242,18 @@ nav {
     background: #000;
     height: 100px;
     margin-top: 450px;
+    width: 100%;
 }
 
-i {
-    font-size: 650px;
+.circle-svg {
+    height: 70%;
+    width: 70%;
     position: absolute;
     z-index: -1;
-    margin-left: -20%;
-    margin-top: -50%;
+    top: -200px;
+    animation-name: hover;
+    animation-duration: 2.5s;
+    left: -450px;
     color: rgba(255, 255, 255, 0.137);
 }
 
